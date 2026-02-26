@@ -8,6 +8,7 @@
  * @author Camil
  */
 public class Libro {
+
     private String isbn;
     private String titulo;
     private String autor;
@@ -72,5 +73,8 @@ public class Libro {
         this.disponible = disponible;
     }
     
-    
+     @Override
+    public String toString() {
+        return "Libro{" + "isbn=" + isbn + ", titulo=" + titulo + ", autor=" + autor + ", genero=" + genero + ", anioPublicacion=" + anioPublicacion + ", disponible=" + disponible + '}';
+    }
 }
