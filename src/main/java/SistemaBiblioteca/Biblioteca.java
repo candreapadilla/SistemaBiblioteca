@@ -5,6 +5,7 @@
 package SistemaBiblioteca;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  *
@@ -90,7 +91,7 @@ public class Biblioteca {
 
                 case 4:
                     System.out.print("Nuevo año: ");
-                    libro.setAniopublicacion(sc.nextInt());
+                    libro.setAnioPublicacion(sc.nextInt());
                     break;
 
                 case 5:
@@ -109,7 +110,7 @@ public class Biblioteca {
                     libro.setGenero(sc.nextLine());
 
                     System.out.print("Nuevo año: ");
-                    libro.setAniopublicacion(sc.nextInt());
+                    libro.setAnioPublicacion(sc.nextInt());
 
                     System.out.print("Disponible (true/false): ");
                     libro.setDisponible(sc.nextBoolean());
