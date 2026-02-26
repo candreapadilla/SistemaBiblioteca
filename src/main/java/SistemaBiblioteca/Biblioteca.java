@@ -20,5 +20,29 @@ public class Biblioteca {
     public void registrarLibro(Libro libro) {
         listaLibros.add(libro);
     }
+    
+    public void listarLibros() {
+        if(listaLibros.size() == 0){
+            System.out.println("No hay libros registrados");
+        }else{
+
+            for(int i = 0; i < listaLibros.size(); i++){
+                System.out.println(listaLibros.get(i));
+            }
+
+        }
+    }
+    public Libro buscarLibro(String isbn){
+
+        for(int i = 0; i < listaLibros.size(); i++){
+
+            if(listaLibros.get(i).getIsbn().equals(isbn)){
+                return listaLibros.get(i);
+            }
+
+        }
+
+        return null;
+    }
 }
  
